@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 1</title>
+  </head>
+  <body>
+    <header>
+      <img src="profile.jpg" alt="profile picture" width="100" />
+      <h1>BAGUS ARDIN SAPUTRA</h1>
+      <p>Saya seorang mahasiswa informatika Insitut Teknologi Sumatera</p>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang saya</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#hubungi">Hubungi saya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="tentang">
+        <h2>Tentang saya</h2>
+        <p>
+          Nama saya bagus ardin saputra nim 120140176 saya tinggal di sukarame.rumah saya di kotaagung tanggamus lampung
+        </p>
+
+        <figure>
+          <video controls>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <figcaption>Video saya</figcaption>
+        </figure>
+      </article>
+
+      <article id="pengalaman">
+        <h2>Pengalaman</h2>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th rowspan="2">No</th>
+              <th rowspan="2">Deskripsi</th>
+              <th colspan="2">Tahun</th>
+            </tr>
+            <tr>
+              <th>Mulai</th>
+              <th>Selesai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Bangun pagi</td>
+              <td>07:00</td>
+              <td>Sekarang</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sholat 5 Waktu</td>
+              <td>Setiap Hari</td>
+              <td>Sekarang</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article id="hubungi">
+        <h2>Hubungi saya</h2>
+        <form action="get">
+          <label for="nama">Nama : </label>
+          <input type="text" name="nama" id="nama" /><br /><br />
+
+          <p>Jenis Kelamin</p>
+          <br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="laki-laki"
+            id="laki"
+          />
+          <label for="laki">Laki-Laki</label><br />
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            value="perempuan"
+            id="perempuan"
+          />
+          <label for="perempuan">Perempuan</label><br /><br />
+
+          <label>Pilih media sosial jika ingin berinteraksi dengan saya</label>
+          <br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="facebook"
+            id="facebook"
+          />
+          <label for="facebook">Facebook</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="twitter"
+            id="twitter"
+          />
+          <label for="twitter">Twitter</label><br />
+          <input
+            type="checkbox"
+            name="media_sosial"
+            value="instagram"
+            id="instagram"
+          />
+          <label for="instagram">Instagram</label><br /><br />
+
+          <label for="pesan">Pesan : </label>
+          <br />
+          <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+
+          <br />
+          <input type="submit" value="Kirim" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2022 <a href="https://github.com/maybeenang/"> Elang </a></p>
+    </footer>
+  </body>
+</html>
